@@ -22,7 +22,7 @@ function draw() {
   if(keyCode === 32){
     bob.followMouse();
   }
-  if(keyCode === 10){
+  if(keyCode === 13){
     bob.detachFromMouse();
   }
 
@@ -30,7 +30,7 @@ function draw() {
   textSize(25);
   fill(255);
   text("Press space to make the bob move according to the mouse", 70, 40);
-  text("Press enter to detach the bob from the mouse", 100, 80);
+  text("Press down arrow to detach the bob from the mouse", 100, 80);
   pop();
   platform.display();
   bob.display();
